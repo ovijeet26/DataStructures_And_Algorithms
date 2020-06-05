@@ -45,12 +45,20 @@
     <Compile Include="Data Structures\Array\ArrayImplementation.cs" />
     <Compile Include="Data Structures\Array\MergeSortedArrays.cs" />
     <Compile Include="Data Structures\Array\StringReverse.cs" />
+    <Compile Include="Data Structures\HashTable\FirstRecurringCharacter.cs" />
     <Compile Include="Data Structures\HashTable\HashTableImplementation.cs" />
+    <Compile Include="Data Structures\LinkedList\DoubleNode.cs" />
+    <Compile Include="Data Structures\LinkedList\DoublyLinkedList.cs" />
     <Compile Include="Executor.cs" />
+    <Compile Include="Data Structures\LinkedList\Node.cs" />
+    <Compile Include="Data Structures\LinkedList\SinglyLinkedList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data Structures\StacksAndQueues\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

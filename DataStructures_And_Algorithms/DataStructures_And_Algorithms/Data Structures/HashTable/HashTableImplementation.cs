@@ -42,7 +42,7 @@ namespace DataStructures_And_Algorithms.Data_Structures.HashTable
         {
             int index = Hash(key);
             var currentBucket = this.data[index];
-            if (currentBucket.Count > 0)
+            if (currentBucket!=null)
             {
                 foreach (var item in currentBucket)
                 {

@@ -1,6 +1,7 @@
 ﻿using System;
 using DataStructures_And_Algorithms.Data_Structures.Array;
 using DataStructures_And_Algorithms.Data_Structures.HashTable;
+using DataStructures_And_Algorithms.LinkedList;
 
 namespace DataStructures_And_Algorithms
 {
@@ -15,7 +16,11 @@ namespace DataStructures_And_Algorithms
 
             //Hash Table
 
-            StringHashTableImplementaion();
+            //StringHashTableImplementaion();
+            //RecurringCharacter();
+
+            //Linked List
+            SinglyLinkedListImplementaion();
         }
         private static void IntegerArrayImplementaion()
         {
@@ -55,15 +60,15 @@ namespace DataStructures_And_Algorithms
         private static void Print(int[] arr)
         {
             Console.WriteLine();
-            for(int i=0;i<arr.Length;i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                Console.Write(arr[i]+" ");
+                Console.Write(arr[i] + " ");
             }
         }
 
         private static void StringHashTableImplementaion()
         {
-            HashTableImplementation <string,int> ht = new HashTableImplementation<string,int>(2);
+            HashTableImplementation<string, int> ht = new HashTableImplementation<string, int>(2);
             ht.Set("Grapes", 1000);
 
 
@@ -72,6 +77,28 @@ namespace DataStructures_And_Algorithms
             var getValue = ht.Get("Apple");
             Console.ReadKey();
         }
+        private static void RecurringCharacter()
+        {
+            FirstRecurringCharacter fr = new FirstRecurringCharacter();
+            int[] arr = { 1, 2, 3, 4, 5, 4 };
+            Console.WriteLine(fr.FirstRecurringIntegerCustomHashTable(arr));
+            Console.ReadKey();
+        }
 
+        private static void SinglyLinkedListImplementaion()
+        {
+            SinglyLinkedList<int> linkedList = new SinglyLinkedList<int>(10);
+            linkedList.Append(5);
+            linkedList.Append(16);
+            linkedList.Prepend(1);
+            linkedList.PrintList();
+            linkedList.Insert(93, 2);
+            linkedList.PrintList();
+            linkedList.Remove(0);
+            linkedList.PrintList();
+            linkedList.Reverse();
+            linkedList.PrintList();
+            Console.ReadKey();
+        }
     }
 }
